@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Heart Animation</title>
+    <meta charset="UTF-8">
+    <meta name="Keywords">
+    <meta name="Description">
+
+    <!-- Agregar la fuente gótica desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <style>
+      /* Estilos para el canvas */
+      canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .2);
+      }
+
+      /* Estilos para el mensaje con fuente gótica */
+      #message {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 24px;
+        font-family: 'Creepster', cursive;  /* Fuente gótica */
+        text-align: center;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+
+    <canvas id="heart" width="1920" height="947"></canvas>
+
+    <!-- Contenedor del mensaje -->
+    <div id="message">
+      Esta es la reaccion que me causan tus mensajes 🖤
+    </div>
+
+    <script src="heart-animation.js"></script>
+  </body>
+</html>
